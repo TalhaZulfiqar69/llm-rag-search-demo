@@ -1,0 +1,37 @@
+{
+  "name": "llm-rag-search-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "index": "tsx src/server.ts index",
+    "start": "tsx src/server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TalhaZulfiqar69/llm-rag-search-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/TalhaZulfiqar69/llm-rag-search-demo/issues"
+  },
+  "homepage": "https://github.com/TalhaZulfiqar69/llm-rag-search-demo#readme",
+  "dependencies": {
+    "@ibm-cloud/watsonx-ai": "^1.7.16",
+    "@zilliz/milvus2-sdk-node": "^3.0.6",
+    "cheerio": "^1.2.0",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
