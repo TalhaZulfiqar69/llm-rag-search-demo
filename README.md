@@ -28,11 +28,11 @@ This application allows users to ask natural language questions against internal
 
 ```
 
-1. Document Processing: HTML documentation is cleaned into plain text using Cheerio.
-2. Vector Embedding: Text is transformed into vector embeddings using IBM's ibm/slate-125m-english-rtrvr model via watsonx.ai.
-3. Vector Storage: Vectors and document metadata are stored in Milvus with an HNSW index and COSINE distance metric.
-4. Retrieval: User search queries are vectorized and compared against Milvus data to retrieve top matching contexts.
-5. Generation: Top context matches and the user's query are passed to IBM's ibm/granite-4-h-small LLM to generate a factual response with source citations.
+1. ***Document Processing:*** HTML documentation or any source of document such as PDF, Text files is cleaned into plain text using Cheerio.
+2. ***Vector Embedding:*** Text is transformed into vector embeddings using IBM's ibm/slate-125m-english-rtrvr model via watsonx.ai.
+3. ***Vector Storage:*** Vectors and document metadata are stored in Milvus with an HNSW index and COSINE distance metric.
+4. ***Retrieval:*** User search queries are vectorized and compared against Milvus data to retrieve top matching contexts.
+5. ***Generation:*** Top context matches and the user's query are passed to IBM's ibm/granite-4-h-small LLM to generate a factual response with source citations.
 
 
 ## Project Structure
@@ -52,7 +52,6 @@ rag-search-demo/
 ├── package.json          # Node dependencies & project scripts
 └── tsconfig.json         # TypeScript configuration
 ```
-
 
 ## Prerequisites
 
